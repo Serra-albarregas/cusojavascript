@@ -1,0 +1,13 @@
+.activo {
+    color: green;
+    font-weight: bold;
+}
+
+.inactivo {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.destacado {
+    background-color: yellow;
+}

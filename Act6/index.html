@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica DOM</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1 id="titulo">Lista de usuarios</h1>
+
+  <p id="descripcion">
+    A continuación se muestra una lista de usuarios registrados en el sistema.
+  </p>
+
+  <ul id="usuarios">
+    <li data-estado="activo">Ana</li>
+    <li data-estado="inactivo">Luis</li>
+    <li data-estado="activo">María</li>
+    <li data-estado="inactivo">Carlos</li>
+  </ul>
+
+  <section id="info">
+    <h2>Información adicional</h2>
+    <p class="texto">Total de usuarios: <span id="total">0</span></p>
+    <p class="texto">Usuarios activos: <span id="activos">0</span></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
