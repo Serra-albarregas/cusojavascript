@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario con LocalStorage</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h2>Formulario</h2>
+
+    <form id="miFormulario">
+        <label>
+            Nombre:
+            <input type="text" id="nombre">
+        </label>
+
+        <label>
+            Fecha de nacimiento:
+            <input type="date" id="fechaNacimiento">
+        </label>
+
+        <div id="edad"></div>
+
+        <button type="button" id="guardar">Guardar</button>
+        <button type="button" id="cargar">Cargar</button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
