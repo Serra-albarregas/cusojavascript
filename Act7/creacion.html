@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creación de Personaje — D&D</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1 class="page-title">✦ Forja tu Héroe ✦</h1>
+  <a class="nav-link" href="visor.html">Ver ficha del personaje</a>
+
+  <div id="contenedor" class="solo-stats">
+    <div id="stats">
+
+      <!-- Nombre -->
+      <label class="field-label" for="nombre">Nombre del personaje</label>
+      <input type="text" id="nombre" placeholder="Escribe tu nombre…">
+
+      <hr>
+
+      <!-- Raza, Clase, Alineamiento -->
+      <div class="selects-grid">
+        <div class="select-group">
+          <label class="field-label" for="raza">Raza</label>
+          <div class="select-wrap">
+            <select id="raza">
+              <option value="">— Elige raza —</option>
+              <option>Humano</option>
+              <option>Elfo</option>
+              <option>Elfo Oscuro</option>
+              <option>Enano</option>
+              <option>Mediano</option>
+              <option>Gnomo</option>
+              <option>Semiorco</option>
+              <option>Tiefling</option>
+              <option>Dragonborn</option>
+            </select>
+            <span class="select-arrow">▾</span>
+          </div>
+        </div>
+        <div class="select-group">
+          <label class="field-label" for="clase">Clase</label>
+          <div class="select-wrap">
+            <select id="clase">
+              <option value="">— Elige clase —</option>
+              <option>Bárbaro</option>
+              <option>Bardo</option>
+              <option>Clérigo</option>
+              <option>Druida</option>
+              <option>Explorador</option>
+              <option>Guerrero</option>
+              <option>Hechicero</option>
+              <option>Mago</option>
+              <option>Monje</option>
+              <option>Paladín</option>
+              <option>Pícaro</option>
+              <option>Brujo</option>
+            </select>
+            <span class="select-arrow">▾</span>
+          </div>
+        </div>
+        <div class="select-group">
+          <label class="field-label" for="alineamiento">Alineamiento</label>
+          <div class="select-wrap">
+            <select id="alineamiento">
+              <option value="">— Elige —</option>
+              <option>Legal Bueno</option>
+              <option>Neutral Bueno</option>
+              <option>Caótico Bueno</option>
+              <option>Legal Neutral</option>
+              <option>Neutral Verdadero</option>
+              <option>Caótico Neutral</option>
+              <option>Legal Maligno</option>
+              <option>Neutral Maligno</option>
+              <option>Caótico Maligno</option>
+            </select>
+            <span class="select-arrow">▾</span>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Características -->
+      <span class="field-label">Características</span>
+
+      <span class="stat-value">Puntos disponibles</span>
+      <span class="stat-value" id="puntos-disponibles">27</span>
+
+      <div class="stat-row" id="constitucion">
+        <label>Constitución</label>
+        <button type="button">-</button>
+        <div class="barra-wrap"><div class="barra" style="width:36.84%"></div></div>
+        <button type="button">+</button>
+        <span class="stat-value">8</span>
+      </div>
+
+      <div class="stat-row" id="destreza">
+        <label>Destreza</label>
+        <button type="button">-</button>
+        <div class="barra-wrap"><div class="barra" style="width:36.84%"></div></div>
+        <button type="button">+</button>
+        <span class="stat-value">8</span>
+      </div>
+
+      <div class="stat-row" id="fuerza">
+        <label>Fuerza</label>
+        <button type="button">-</button>
+        <div class="barra-wrap"><div class="barra" style="width:36.84%"></div></div>
+        <button type="button">+</button>
+        <span class="stat-value">8</span>
+      </div>
+
+      <div class="stat-row" id="inteligencia">
+        <label>Inteligencia</label>
+        <button type="button">-</button>
+        <div class="barra-wrap"><div class="barra" style="width:36.84%"></div></div>
+        <button type="button">+</button>
+        <span class="stat-value">8</span>
+      </div>
+
+      <div class="stat-row" id="sabiduria">
+        <label>Sabiduría</label>
+        <button type="button">-</button>
+        <div class="barra-wrap"><div class="barra" style="width:36.84%"></div></div>
+        <button type="button">+</button>
+        <span class="stat-value">8</span>
+      </div>
+
+      <div class="stat-row" id="carisma">
+        <label>Carisma</label>
+        <button type="button">-</button>
+        <div class="barra-wrap"><div class="barra" style="width:36.84%"></div></div>
+        <button type="button">+</button>
+        <span class="stat-value">8</span>
+      </div>
+
+      <hr>
+
+      <!-- Habilidades (máx. 2) -->
+      <div class="skills-section">
+        <label class="field-label">Habilidades <span class="field-hint">(elige 2)</span></label>
+        <div class="skills-check-grid">
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Acrobacias"><span>Acrobacias</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Atletismo"><span>Atletismo</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Arcanos"><span>Arcanos</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Engaño"><span>Engaño</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Historia"><span>Historia</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Interpretación"><span>Interpretación</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Intimidación"><span>Intimidación</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Investigación"><span>Investigación</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Juego de Manos"><span>Juego de Manos</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Medicina"><span>Medicina</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Naturaleza"><span>Naturaleza</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Percepción"><span>Percepción</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Perspicacia"><span>Perspicacia</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Persuasión"><span>Persuasión</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Religión"><span>Religión</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Sigilo"><span>Sigilo</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Supervivencia"><span>Supervivencia</span></label>
+          <label class="skill-check"><input type="checkbox" name="habilidad" value="Trato con Animales"><span>Trato con Animales</span></label>
+        </div>
+        <p class="skills-warning" id="skills-warning">Solo puedes elegir 2 habilidades.</p>
+      </div>
+      <button id="botonGuardar">Guardar Personaje</button>
+      <button id="botonContinuar">Guardar y continuar</button>
+    </div>
+  </div>
+  <script type="module" src="controladores/ControladorCreacion.js"></script>
+</body>
+</html>

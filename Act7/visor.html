@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Personaje — D&D</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1 class="page-title">✦ Ficha del Personaje ✦</h1>
+  <a class="nav-link" href="creacion.html">Volver a creación</a>
+
+  <div class="sheet-container">
+
+    <!-- Cabecera -->
+    <div class="sheet-header">
+      <p class="subtitle">Hoja de Personaje</p>
+      <h2 id="name"></h2>
+    </div>
+
+    <!-- Info básica -->
+    <p class="section-title">Información General</p>
+    <div class="info-grid">
+      <div class="info-box">
+        <span class="info-label">Clase</span>
+        <span class="info-value"></span>
+      </div>
+      <div class="info-box">
+        <span class="info-label">Raza</span>
+        <span class="info-value"></span>
+      </div>
+      <div class="info-box">
+        <span class="info-label">Nivel</span>
+        <span class="info-value"></span>
+      </div>
+      <div class="info-box">
+        <span class="info-label">Alineamiento</span>
+        <span class="info-value"></span>
+      </div>
+    </div>
+
+    <!-- Atributos principales -->
+    <p class="section-title">Atributos</p>
+    <div class="abilities-grid">
+      <div class="ability-box">
+        <span class="ability-name">Fuerza</span>
+        <span class="ability-score">18</span>
+        <span class="ability-modifier">+4</span>
+      </div>
+      <div class="ability-box">
+        <span class="ability-name">Destreza</span>
+        <span class="ability-score">14</span>
+        <span class="ability-modifier">+2</span>
+      </div>
+      <div class="ability-box">
+        <span class="ability-name">Constitución</span>
+        <span class="ability-score">16</span>
+        <span class="ability-modifier">+3</span>
+      </div>
+      <div class="ability-box">
+        <span class="ability-name">Inteligencia</span>
+        <span class="ability-score">10</span>
+        <span class="ability-modifier">+0</span>
+      </div>
+      <div class="ability-box">
+        <span class="ability-name">Sabiduría</span>
+        <span class="ability-score">12</span>
+        <span class="ability-modifier">+1</span>
+      </div>
+      <div class="ability-box">
+        <span class="ability-name">Carisma</span>
+        <span class="ability-score">8</span>
+        <span class="ability-modifier">-1</span>
+      </div>
+    </div>
+
+    <!-- Combate -->
+    <p class="section-title">Combate</p>
+    <div class="combat-grid">
+      <div class="combat-box">
+        <span class="combat-label">Puntos de Golpe</span>
+        <span class="combat-value" id="puntos-golpe"></span>
+      </div>
+      <div class="combat-box">
+        <span class="combat-label">Clase de Armadura</span>
+        <span class="combat-value" id="armadura"></span>
+      </div>
+      <div class="combat-box">
+        <span class="combat-label">Iniciativa</span>
+        <span class="combat-value" id="iniciativa"></span>
+      </div>
+      <div class="combat-box">
+        <span class="combat-label">Velocidad</span>
+        <span class="combat-value" id="velocidad"></span>
+      </div>
+    </div>
+
+    <!-- Habilidades -->
+    <p class="section-title">Habilidades</p>
+    <ul class="skills-list">
+      <li><span class="ability-name"><span class="prof"></span> Atletismo</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Acrobacias</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Juego de manos</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Sigilo</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Conocimiento arcano</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Historia</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Investigación</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Naturaleza</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Religión</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Medicina</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Percepción</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Perspicacia</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Supervivencia</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Trato con animales</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Engaño</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Interpretación</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Intimidación</span><span class="bonus"></span></li>
+      <li><span class="ability-name"><span class="prof"></span> Persuasión</span><span class="bonus"></span></li>
+    </ul>
+  </div>
+  <script type="module" src="controladores/ControladorVisor.js"></script>
+</body>
+</html>
